@@ -1,5 +1,16 @@
 {
-  "buildCommand": "npm run build",
+  "builds": [
+    {
+      "src": "vite.config.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "framework": "vite",
   "outputDirectory": "dist",
-  "framework": "vite"
+  "installCommand": "npm install",
+  "buildCommand": "npm run build"
 }
