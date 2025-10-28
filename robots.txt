@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://lanchonete-kappa.vercel.app/sitemap.xml
