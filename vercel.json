@@ -2,8 +2,5 @@
   "framework": "vite",
   "buildCommand": "npm run build",
   "outputDirectory": "client/dist",
-  "rootDirectory": "client",
-  "routes": [
-    { "src": "/(.*)", "dest": "client/dist/$1" }
-  ]
+  "rootDirectory": "client"
 }
