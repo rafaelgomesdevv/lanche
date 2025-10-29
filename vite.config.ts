@@ -4,10 +4,10 @@ import path from "path";
 
 export default defineConfig({
   plugins: [react()],
-  base: "./", // garante que funciona no Vercel
-  root: path.resolve(__dirname, "client"), // 👈 diz onde está o index.html
+  base: "./", // necessário para servir assets corretamente
+  root: path.resolve(__dirname, "client"), // onde está o index.html
   build: {
-    outDir: path.resolve(__dirname, "dist"), // saída na raiz
+    outDir: path.resolve(__dirname, "dist"), // pasta que o Vercel publica
     emptyOutDir: true,
   },
 });
